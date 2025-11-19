@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+// +kubebuilder:ac:generate=true
 package v1
 
 import (
@@ -61,6 +62,7 @@ type WordpressStatus struct {
 // +kubebuilder:object:root=true
 // +kubebuilder:storageversion
 // +kubebuilder:subresource:status
+// +kubebuilder:resource
 
 // Wordpress is the Schema for the wordpresses API
 type Wordpress struct {

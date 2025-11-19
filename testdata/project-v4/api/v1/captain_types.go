@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+// +kubebuilder:ac:generate=true
 package v1
 
 import (
@@ -60,6 +61,7 @@ type CaptainStatus struct {
 
 // +kubebuilder:object:root=true
 // +kubebuilder:subresource:status
+// +kubebuilder:resource
 
 // Captain is the Schema for the captains API
 type Captain struct {
